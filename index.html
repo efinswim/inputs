@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Input Pizza</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <h1>Конструктор пиццы</h1>
+            <form action="">
+            <div>Название пиццы: <input type="text" placeholder="придумайте" /></div>
+            <div>Диаметр: <input type="range" min="25" max="55" step="10"/></div>
+            <div>Тесто: <select size="1">
+                <option>Классическое</option>
+                <option>Ржаное</option>
+            </select></div>
+            <div>Соус: <select size="1">
+                <option>Классический</option>
+                <option>Томатный</option>
+                <option>Сливочный</option>
+                <option>Чесночный</option>
+            </select></div>
+            <div>Начинка: 
+                <input type="radio" name="falling" id="filling1" />
+                <label for="filling1">Морепродукты</label>
+                <input type="radio" name="falling" id="filling2" /> 
+                <label for="filling2">Прошутто</label>
+                <input type="radio" name="falling" id="filling3" /> 
+                <label for="filling3">Пепперони</label>
+                <input type="radio" name="falling" id="filling4" /> 
+                <label for="filling4">Овощи гриль</label>
+            </div>
+            <div>Сыр: 
+                <input type="checkbox" id="cheese1" />
+                <label for="cheese1">Моцарелла</label>
+                <input type="checkbox" id="cheese2" />
+                <label for="cheese2">Пармезан</label>
+                <input type="checkbox" id="cheese3" />
+                <label for="cheese3">Бри</label>
+                <input type="checkbox" id="cheese4" />
+                <label for="cheese4">Рокфор</label>
+            </div>
+            <div>Томаты: 
+                <input type="checkbox" id="tomatoes1" />
+                <label for="tomatoes1">Черри</label>
+                <input type="checkbox" id="tomatoes2" />
+                <label for="tomatoes2">Бакинские</label>
+            </div>
+            <div>Дополнительно: 
+                <input type="checkbox" id="topping1" />
+                <label for="topping1">Оливки</label>
+                <input type="checkbox" id="topping2" />
+                <label for="topping2">Руккола</label>
+                <input type="checkbox" id="topping3" />
+                <label for="topping3">Лук</label>
+            </div>
+            <div><input type="reset" value="Сбросить конструктор" />
+            </div>
+            </form>
+            <h2>Доставка</h2>
+            <div>Адрес: <input type="text" placeholder="укажите" /></div>
+            <div>Номер телефона: <input type="tel" placeholder="укажите"/></div>
+            <div>Время доставки: <input type="time" /></div>
+            <textarea placeholder="Комментарий для заказа"></textarea>
+            <div><input type="submit" value="Подтвердить заказ" /></div>
+        </div>
+    </main>
+</body>
+</html>
