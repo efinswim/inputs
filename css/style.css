@@ -20,12 +20,38 @@ select {
     padding: 5px;
     background-color: #F0E68C;
     border: 3px solid #BDB76B;
+    outline: inherit;
+    appearance: none;
 }
+.selects {
+    position: absolute;
+    border: 1px solid #9b65e270;
+    box-shadow: 0 1px 0 1px #9b65e270;
+    border-radius: 0.5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+.selects::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    border: solid #620cd1;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 30%;
+} 
 input[type="text"] {
     background-color: #F0E68C;
     padding: 5px;
     border: 3px solid #BDB76B;
     cursor: pointer;
+    outline: inherit;
 }
 input[type="addres"] {
     background-color: #F0E68C;
@@ -38,24 +64,28 @@ input[type="time"] {
     padding: 5px;
     border: 3px solid #BDB76B;
     cursor: pointer;
+    outline: inherit;
 }
 input[type="tel"] {
     background-color: #F0E68C;
     padding: 5px;
     border: 3px solid #BDB76B;
     cursor: pointer;
+    outline: inherit;
 }
 input[type="reset"] {
     background-color: #F0E68C;
     padding: 5px;
     border: 3px solid #BDB76B;
     cursor: pointer;
+    outline: inherit;
 }
 input[type="submit"] {
     background-color: #F0E68C;
     padding: 5px;
     border: 3px solid #BDB76B;
     cursor: pointer;
+    outline: inherit;
 }
 div input[type="checkbox"] {
     display: none;
@@ -92,4 +122,5 @@ textarea {
     resize: none;
     padding: 5px;
     margin: 5px;
+    outline: inherit;
 }
